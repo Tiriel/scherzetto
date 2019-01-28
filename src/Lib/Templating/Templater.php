@@ -11,7 +11,7 @@ class Templater
 
     public function __construct()
     {
-        $this->twigLoader = new \Twig_Loader_Filesystem(getenv('APP_ROOT').'/public/templates');
+        $this->twigLoader = new \Twig_Loader_Filesystem(getenv('APP_ROOT').'/templates');
         $this->twigEnv = new \Twig_Environment($this->twigLoader);
     }
 

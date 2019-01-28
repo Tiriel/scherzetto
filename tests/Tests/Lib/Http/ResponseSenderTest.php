@@ -40,13 +40,8 @@ class ResponseSenderTest extends TestCase
         $this->assertEquals('Not Found', $echo);
     }
 
-    /**
-     * @runInSeparateProcess
-     */
     public function testSendHeadersAlreadySent()
     {
-        global $headersSent;
-        $headersSent = true;
         ob_start();
         $this->sender->sendResponse();
         $echo = ob_get_clean();

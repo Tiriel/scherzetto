@@ -24,8 +24,7 @@
             "App\\": "./src/App/",
             "Lib\\": "./src/Lib/",
             "Tests\\": "./tests/Tests/"
-        },
-        "files": ["./tests/Tests/Lib/Http/headers_sent.php"]
+        }
     },
     "license": "MIT",
     "authors": [
