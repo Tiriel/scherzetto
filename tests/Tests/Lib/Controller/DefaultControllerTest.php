@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Tests\Lib\Controller;
 
 use GuzzleHttp\Psr7\Response;
-use Lib\Controller\DefaultController;
+use App\Controller\DefaultController;
 use PHPUnit\Framework\TestCase;
 
 class DefaultControllerTest extends TestCase

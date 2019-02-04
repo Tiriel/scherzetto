@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Lib;
+namespace App;
 
-use Lib\Routing\Router;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
+use Scherzetto\Routing\Router;
 
 class Application
 {
@@ -24,7 +24,7 @@ class Application
 
         $namespace = '\\App\\Controller\\';
         if (!class_exists($namespace.$controller)) {
-            $namespace = '\\Lib\\Controller\\';
+            $namespace = '\\App\\Controller\\';
         }
         $class = $namespace.$controller;
 

@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Lib\Controller;
+namespace App\Controller;
 
 use GuzzleHttp\Psr7\Response;
-use Lib\Templating\Templater;
 use Psr\Http\Message\ResponseInterface;
+use Scherzetto\Templating\Templater;
 
 class DefaultController
 {

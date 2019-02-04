@@ -1,12 +1,12 @@
 <?php
 
-use Lib\Application;
-use Lib\Env\EnvVarsSetter;
-use Lib\Env\Parser\DotenvParser;
-use Lib\Http\Request;
-use Lib\Http\ResponseSender;
+use App\Application;
+use Scherzetto\Env\EnvVarsSetter;
+use Scherzetto\Env\Parser\DotenvParser;
+use Scherzetto\Http\Request;
+use Scherzetto\Http\ResponseSender;
 
-require __DIR__.'/vendor/autoload.php';
+require __DIR__.'/../vendor/autoload.php';
 
 $env = getenv('APP_ENV') ?? EnvVarsSetter::ENV_DEV;
 (new EnvVarsSetter(new DotenvParser()))->loadEnv('.env', 'APP_ENV', $env);

@@ -5,9 +5,9 @@ declare(strict_types=1);
 namespace Tests;
 
 use GuzzleHttp\Psr7\Response;
-use Lib\Application;
-use Lib\Http\Request;
-use Lib\Routing\Router;
+use App\Application;
+use App\Http\Request;
+use App\Routing\Router;
 use PHPUnit\Framework\MockObject\MockObject;
 
 class ApplicationTest extends TestCase
