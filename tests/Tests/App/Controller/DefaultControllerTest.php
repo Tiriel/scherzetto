@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Tests\Lib\Controller;
+namespace Tests\App\Controller;
 
-use GuzzleHttp\Psr7\Response;
 use App\Controller\DefaultController;
+use GuzzleHttp\Psr7\Response;
 use PHPUnit\Framework\TestCase;
 
 class DefaultControllerTest extends TestCase

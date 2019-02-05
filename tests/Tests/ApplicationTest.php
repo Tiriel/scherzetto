@@ -4,11 +4,12 @@ declare(strict_types=1);
 
 namespace Tests;
 
-use GuzzleHttp\Psr7\Response;
 use App\Application;
-use App\Http\Request;
-use App\Routing\Router;
+use GuzzleHttp\Psr7\Response;
 use PHPUnit\Framework\MockObject\MockObject;
+use Scherzetto\Http\Request;
+use Scherzetto\Routing\Router;
+use Scherzetto\TestCase\TestCase;
 
 class ApplicationTest extends TestCase
 {
